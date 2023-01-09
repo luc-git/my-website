@@ -255,4 +255,13 @@ footer .colonnes{
     text-align: left;
     font-size: 0.7rem;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
 /**********fin du pied de page*****/

@@ -1,0 +1,6 @@
+.text{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    height: 400px;
+}
