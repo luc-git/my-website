@@ -1,9 +1,5 @@
 # The Docker image that will be used to build your app
 image: node:lts
-script:
-  - gem install bundler
-  - bundle install
-  - bundle exec jekyll build
 job:
   script:
   - gem install bundler
