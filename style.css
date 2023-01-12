@@ -1,52 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Diplomata+SC&display=swap');
-body{
+
+body {
     font-family: 'Lato', sans-serif;
-    background-color:#171717 ;
+    background-color: #171717;
     padding: 0;
     margin: 0;
     color: whitesmoke;
 }
-body .page{
+
+body .page {
     margin: 20px 80px;
 
 }
+
 /*********barre de navigation ***********/
-nav{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-position: sticky;
-top: 0;
-background-color: #171717;
-padding: 10px 0px;
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #171717;
+    padding: 10px 0px;
 
 }
-nav .onglets{
+
+nav .onglets {
     display: flex;
     flex-wrap: wrap;
     margin-top: 5px;
 
 }
-nav .onglets a{
+
+nav .onglets a {
     margin-right: 20px;
     cursor: pointer;
 }
-nav .buttons button{
+
+nav .buttons button {
     padding: 13px 20px;
     color: whitesmoke;
     border: none;
     cursor: pointer;
 }
-nav .buttons .login{
+
+nav .buttons .login {
     background-color: inherit;
     margin-right: 10px;
     color: blueviolet;
 }
-nav .buttons .register{
+
+nav .buttons .register {
     background-color: blueviolet;
 }
+
 /*********fin de la barre de navigation ***********/
 
 /* timer */
@@ -57,25 +66,27 @@ nav .buttons .register{
 
 /* fin du timer */
 /************header*********/
-header{
+header {
     background-repeat: no-repeat;
     margin-top: 100px;
     margin: 20px;
     background-position: center;
     background-size: 100px 100px;
-    background:url(lune2.jpg);
+    background: url(lune2.jpg);
     padding: 0;
 
 }
-header h1{
+
+header h1 {
     font-family: 'Lobster', sans-serif;
     text-align: center;
     top: 50px;
     font-size: 90px;
     padding: 100px;
     color: blueviolet;
-    
+
 }
+
 /************ fin header*********/
 
 /************** Descriptif**********/
@@ -88,22 +99,23 @@ header h1{
 
 .event {
     width: 250px;
-	height: 100px;
+    height: 100px;
     padding: 15px;
     gap: 20px;
-	width: 85%;
-	height: 85%;
-	box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
-	border-radius: 10px;
+    width: 85%;
+    height: 85%;
+    box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
+    border-radius: 10px;
     text-align: center;
 }
-   
+
 
 h6 {
     text-align: center;
     font-size: large;
     margin: 10px;
 }
+
 /************* fin du  Descriptif************/
 /****************** carte *******************/
 /*Container 3D*/
@@ -115,81 +127,88 @@ h6 {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .container-3d {
-	width: 150px;
-	height: 300px;
-	perspective: 500px; /*Referencial for 3d Perspective*/
-	border-radius: 10px;
+    width: 150px;
+    height: 300px;
+    perspective: 500px;
+    /*Referencial for 3d Perspective*/
+    border-radius: 10px;
 }
 
 /*Card*/
 .card {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
-	border-radius: 10px;
-	transition: all 0.8s ease-in-out;
-	transform-style: preserve-3d; /*Force the two faces to rotate together*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
+    border-radius: 10px;
+    transition: all 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    /*Force the two faces to rotate together*/
 }
 
 .front,
 .back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	backface-visibility: hidden; /*hide backface*/
-	transition: all 1s ease-in-out;
-	transform-style: preserve-3d; /*to allow 3d on images*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    /*hide backface*/
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+    /*to allow 3d on images*/
 
-	background: linear-gradient(
-        176deg, 
-        rgba(218,2,255,1) 0%,
-        rgba(166,2,194,1) 24%,
-        rgba(0,0,0,1) 100%);
+    background: linear-gradient(176deg,
+            rgba(218, 2, 255, 1) 0%,
+            rgba(166, 2, 194, 1) 24%,
+            rgba(0, 0, 0, 1) 100%);
 
 }
 
 .back {
-	background-position: right;
-	font-family: "Lobster", cursive;
-	transform: rotateY(180deg); /*rotate this face*/
+    background-position: right;
+    font-family: "Lobster", cursive;
+    transform: rotateY(180deg);
+    /*rotate this face*/
 }
 
 /*Content Card*/
 .front-content,
 .back-content {
-	transform: translateZ(50px);
+    transform: translateZ(50px);
 }
 
 /*Front*/
 .front-content {
-	text-align: center;
+    text-align: center;
 }
 
 
 
 /*Back*/
 .back-content {
-	height: 95%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
-    
+
 }
+
 h2 {
-   text-align: center;
-   margin-top: 55%;
-   padding: 10px;
-   font-size: 0.9rem;
-   color: whitesmoke;
-   text-shadow: 2px 4px 2px black;
-   font-family: 'Diplomata SC', cursive;
+    text-align: center;
+    margin-top: 55%;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: whitesmoke;
+    text-shadow: 2px 4px 2px black;
+    font-family: 'Diplomata SC', cursive;
 }
+
 h3 {
     padding: 0;
     margin: 0;
@@ -197,8 +216,9 @@ h3 {
     margin-block-end: 0.5em;
     font-weight: 100;
     color: whitesmoke;
-    text-shadow:  2px 4px 2px black;
+    text-shadow: 2px 4px 2px black;
 }
+
 .para {
     text-align: center;
     padding: 15px;
@@ -210,58 +230,62 @@ h3 {
 }
 
 .about {
-	margin: 90px;
-	font-family: "Lobster", cursive;
-	font-size: 1rem;
-	color: whitesmoke;
-	text-shadow: 1px 3px 2px #000000;
-	text-align: end;
+    margin: 90px;
+    font-family: "Lobster", cursive;
+    font-size: 1rem;
+    color: whitesmoke;
+    text-shadow: 1px 3px 2px #000000;
+    text-align: end;
 }
 
 /*Hover Transition*/
 .container-3d:hover .card {
-	transform: rotateY(180deg); /*rotate card when hover on container*/
+    transform: rotateY(180deg);
+    /*rotate card when hover on container*/
 }
 
 .container-3d:hover .front {
-	background-position: right;
+    background-position: right;
 }
 
 .container-3d:hover .back {
-	background-position: left;
+    background-position: left;
 }
 
 
 /************* fin carte *******************/
 
 /************pied de page*******/
-footer{
+footer {
     background-color: #1f1e1ea1;
     padding: 20px 100px;
     color: gray;
 
 }
-footer .colonnes{
+
+footer .colonnes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    font-size:10px ;
+    font-size: 10px;
 
 }
-.dev{
+
+.dev {
     font-size: 7px;
     color: blueviolet;
     text-align: left;
     font-size: 0.7rem;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
+
 /**********fin du pied de page*****/
