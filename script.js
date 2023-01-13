@@ -15,3 +15,14 @@ document.getElementById("minutes").innerText = minutes + " Minute(s)"
 document.getElementById("seconds").innerText = seconds + " Seconde(s)"
 
 },1000)
+
+const onglet = document.getElementById("mobile-onglet")
+
+onglet.addEventListener("click", event => {
+    if(document.getElementById("onglets").style.visibility == "visible"){
+        document.getElementById("onglets").style.visibility = "hidden" 
+    }
+    else{
+        document.getElementById("onglets").style.visibility = "visible" 
+    }
+})

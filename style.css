@@ -16,25 +16,28 @@ body .page {
 }
 
 /*********barre de navigation ***********/
+@media only screen and (min-width: 1080px){
+    #mobile-onglet{
+        display: none;
+    }
+}
+
 nav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    position: sticky;
     top: 0;
     background-color: #171717;
     padding: 10px 0px;
 
 }
 
-nav .onglets {
+nav #onglets {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 5px;
 
 }
 
-nav .onglets a {
+nav #onglets a {
     margin-right: 20px;
     cursor: pointer;
 }
@@ -286,6 +289,45 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 810px) {
+    #mobile-onglet{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 20px;
+        width: 16px;
+        flex-wrap: wrap;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    #mobile-onglet span{
+        background-color: white;
+        display: inline-block;
+        height: 1px;
+        transform-origin: center;
+        transition-duration: 86ms;
+        transition-property: background-color,opacity,transform;
+        transition-timing-function: ease-out;
+        width: 16px;
+    }
+
+    nav{
+        visibility: collapse;
+    }
+
+    .cont{
+        flex-direction: column;
+    }
+    
+    #onglets{
+        width: 100%;
+        height: 100%;
+        visibility: collapse;
+    }
 }
 
 /**********fin du pied de page*****/
