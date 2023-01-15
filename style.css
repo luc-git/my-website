@@ -10,15 +10,15 @@ body {
     color: whitesmoke;
 }
 
-body .page {
-    margin: 20px 80px;
-
-}
-
 /*********barre de navigation ***********/
 @media only screen and (min-width: 1080px){
     #mobile-onglet{
         display: none;
+    }
+
+    body .page {
+        margin: 20px 80px;
+    
     }
 }
 
@@ -28,7 +28,6 @@ nav {
     top: 0;
     background-color: #171717;
     padding: 10px 0px;
-
 }
 
 nav #onglets {
@@ -42,20 +41,20 @@ nav #onglets a {
     cursor: pointer;
 }
 
-nav .buttons button {
+nav #buttons button {
     padding: 13px 20px;
     color: whitesmoke;
     border: none;
     cursor: pointer;
 }
 
-nav .buttons .login {
+nav #buttons .login {
     background-color: inherit;
     margin-right: 10px;
     color: blueviolet;
 }
 
-nav .buttons .register {
+nav #buttons .register {
     background-color: blueviolet;
 }
 
@@ -74,8 +73,8 @@ header {
     margin-top: 100px;
     margin: 20px;
     background-position: center;
-    background-size: 100px 100px;
-    background: url(lune2.jpg);
+    /*background-size: 100px 100px;*/
+    /*background: url(lune2.jpg);*/
     padding: 0;
 
 }
@@ -85,7 +84,6 @@ header h1 {
     text-align: center;
     top: 50px;
     font-size: 90px;
-    padding: 100px;
     color: blueviolet;
 
 }
@@ -293,40 +291,52 @@ a:hover {
 
 @media only screen and (max-width: 810px) {
     #mobile-onglet{
+        position: relative;
         display: flex;
         flex-direction: row;
         align-items: center;
         height: 20px;
         width: 16px;
         flex-wrap: wrap;
-        position: absolute;
         right: 10px;
         top: 10px;
+        z-index: 2;
+        padding: 30px;
     }
 
     #mobile-onglet span{
         background-color: white;
         display: inline-block;
         height: 1px;
-        transform-origin: center;
-        transition-duration: 86ms;
-        transition-property: background-color,opacity,transform;
-        transition-timing-function: ease-out;
         width: 16px;
     }
 
     nav{
-        visibility: collapse;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .cont{
         flex-direction: column;
+        align-items: center;
     }
-    
+
     #onglets{
         width: 100%;
-        height: 100%;
-        visibility: collapse;
+        height: 75%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #buttons{
+        display: flex;
+        flex-direction: column;
     }
 }
 
