@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Diplomata+SC&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    background-color:#171717 ;
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+}
+body .page{
+    margin: 20px 80px;
+
+}
+/*********barre de navigation ***********/
+nav{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+position: sticky;
+top: 0;
+background-color: #171717;
+padding: 10px 0px;
+
+}
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+
+}
+nav .onglets a{
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav .buttons button{
+    padding: 13px 20px;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+nav .buttons .login{
+    background-color: inherit;
+    margin-right: 10px;
+    color: blueviolet;
+}
+nav .buttons .register{
+    background-color: blueviolet;
+}
+/*********fin de la barre de navigation ***********/
+.image {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.image1 {
+    padding: 20px;
+    background-color: #33314d;
+
+}
+
+/* timer */
+
+.timertitre p {
+font-size: 20px;
+margin: 0%;
+padding: 0%;
+color: violet;
+}
+
+.timer {
+    
+    width: 250px;
+    height: 65px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    color: #000000;
+    background: rgb(15,152,240);
+background: linear-gradient(93deg, rgba(15,152,240,1) 29%, rgba(106,39,157,1) 58%, rgba(153,102,191,1) 75%);
+}
+
+#days {
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+}
+#hours {
+    color:black;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+}
+#minutes {
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+}
+#seconds {
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+}
+.timer::before,
+.timer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+  width: 100%;
+  height: 100%;
+  transform: scale(0.9);
+  z-index: -1;
+  background-size: 500%;
+  animation: animate 10s infinite;
+}
+.timer::after {
+    filter: blur(20px);
+  }
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 300% 0; }
+    100% { background-position: 0 0; }
+  }
+/* fin du timer */
+/************header*********/
+
+header h1{
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+    margin-top: 0%;
+    padding: 0%;
+    font-size: 15rem;
+    color: blueviolet;
+    
+}
+/************ fin header*********/
+
+/************** Descriptif**********/
+
+.cont {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.event {
+    width: 250px;
+	height: 100px;
+    padding: 15px;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
+	border-radius: 10px;
+    text-align: center;
+}
+.event1 {
+    width: 250px;
+	height: 100px;
+    padding: 7px;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
+	border-radius: 10px;
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+    font-size: large;
+    margin: 10px;
+    color: violet
+}
+/************* fin du  Descriptif************/
+/****************** carte *******************/
+/*Container 3D*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container-3d {
+	width: 200px;
+	height: 400px;
+	perspective: 500px; /*Referencial for 3d Perspective*/
+	border-radius: 10px;
+}
+
+/*Card*/
+.card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
+	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
+	transform-style: preserve-3d; /*Force the two faces to rotate together*/
+}
+
+.front,
+.back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden; /*hide backface*/
+	transition: all 1s ease-in-out;
+	transform-style: preserve-3d; /*to allow 3d on images*/
+
+	background: linear-gradient(180deg, rgba(19,24,29,1) 7%, rgba(32,33,46,1) 36%, rgba(106,39,157,1) 59%, rgba(153,102,191,1) 83%);
+}
+
+.back {
+	background-position: right;
+	font-family: "Lobster", cursive;
+	transform: rotateY(180deg); /*rotate this face*/
+}
+
+/*Content Card*/
+.front-content,
+.back-content {
+	transform: translateZ(50px);
+}
+
+/*Front*/
+.front-content {
+	text-align: center;
+}
+
+
+
+/*Back*/
+.back-content {
+	height: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+h2 {
+   text-align: center;
+   margin-top: 55%;
+   padding: 10px;
+   font-size: 1.2rem;
+   color: whitesmoke;
+   text-shadow: 2px 4px 2px black;
+   font-family: 'Diplomata SC', cursive;
+}
+h3 {
+    padding: 0;
+    margin: 0;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    font-weight: 100;
+    color:violet;
+    text-shadow:  2px 4px 2px black;
+}
+.para {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    margin-top: 0;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+.about {
+	margin: 90px;
+	font-family: "Lobster", cursive;
+	font-size: 1rem;
+	color: whitesmoke;
+	text-shadow: 1px 3px 2px #000000;
+	text-align: end;
+}
+
+/*Hover Transition*/
+.container-3d:hover .card {
+	transform: rotateY(180deg); /*rotate card when hover on container*/
+}
+
+.container-3d:hover .front {
+	background-position: right;
+}
+
+.container-3d:hover .back {
+	background-position: left;
+}
+
+
+/************* fin carte *******************/
+
+/************pied de page*******/
+footer{
+    background-color: #1f1e1ea1;
+    padding: 20px 100px;
+    color: gray;
+
+}
+footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-size:10px ;
+
+}
+.dev{
+    font-size: 7px;
+    color: blueviolet;
+    text-align: left;
+    font-size: 0.7rem;
+}
+/**********fin du pied de page*****/
