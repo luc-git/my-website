@@ -61,12 +61,83 @@ nav #buttons .register {
 /*********fin de la barre de navigation ***********/
 
 /* timer */
-.timer {
-    display: flex;
-    justify-content: space-around;
-}
 
-/* fin du timer */
+.timertitre p {
+    font-size: 20px;
+    margin: 0%;
+    padding: 0%;
+    color: violet;
+    }
+    
+    .timer {
+        
+        width: 250px;
+        height: 65px;
+        border: 1px solid;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        color: #000000;
+        background: rgb(15,152,240);
+    background: linear-gradient(93deg, rgba(15,152,240,1) 29%, rgba(106,39,157,1) 58%, rgba(153,102,191,1) 75%);
+    }
+    
+    #days {
+        color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid;
+        text-align: center;
+    }
+    #hours {
+        color:black;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid;
+        text-align: center;
+    }
+    #minutes {
+        color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid;
+        text-align: center;
+    }
+    #seconds {
+        color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid;
+        text-align: center;
+    }
+    .timer::before,
+    .timer::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+      width: 100%;
+      height: 100%;
+      transform: scale(0.9);
+      z-index: -1;
+      background-size: 500%;
+      animation: animate 10s infinite;
+    }
+    .timer::after {
+        filter: blur(20px);
+      }
+      @keyframes animate {
+        0% { background-position: 0 0; }
+        50% { background-position: 300% 0; }
+        100% { background-position: 0 0; }
+      }
+    /* fin du timer */
 /************header*********/
 header {
     background-repeat: no-repeat;

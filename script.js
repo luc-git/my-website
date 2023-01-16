@@ -9,10 +9,10 @@ const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
 const minutes = Math.floor((difference % (1000* 60 * 60)) / (1000 * 60))
 const seconds = Math.floor((difference % (1000 * 60)) / 1000)
 
-document.getElementById("days").innerText = days + " Jour(s)"
-document.getElementById("hours").innerText = hours + " Heure(s)"
-document.getElementById("minutes").innerText = minutes + " Minute(s)"
-document.getElementById("seconds").innerText = seconds + " Seconde(s)"
+document.getElementById("days").innerText = days + " J"
+document.getElementById("hours").innerText = hours + " H"
+document.getElementById("minutes").innerText = minutes + " M"
+document.getElementById("seconds").innerText = seconds + " S"
 
 },1000)
 
