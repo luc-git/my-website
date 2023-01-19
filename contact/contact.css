@@ -1,8 +1,69 @@
-#contact {
-    width: 100%;
+
+#contacter{
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+#contenu{
+    display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    width: 20%;
+    height: 200px;
+    background-color: #f5773d;
+    border-radius: 20px;
+}
+
+h5{
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    font-size: 1.15rem;
+}
+
+#haut{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
     align-content: space-around;
+    justify-content: space-around;
+    height: 1800px;
+}
+
+@media only screen and (max-width: 810px) {
+
+    #contacter{
+        flex-direction: column;
+        align-content: space-around;
+        height: 1500px;
+    }
+
+    #contenu{
+        width: 100%;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    #dynamo{
+        width: 100%;
+    }
+
+    .page{
+        height: 2400px;
+    }
 }

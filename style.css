@@ -389,6 +389,7 @@ a:hover {
         z-index: 1;
         flex-direction: column;
         justify-content: space-between;
+        visibility: collapse;
     }
 
     .cont{
