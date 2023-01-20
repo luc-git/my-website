@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    background-color: rgba(0, 0, 0, 0.938);
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main {
+    height: 700px;
+    width: 550px ;
+    border: 2px solid aqua;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
+    margin-top: 15px;
+    
+}
+.main1 p{
+    color: rgb(119, 15, 180);
+    font-size: 5rem;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+.main1 a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: aqua;
+    padding: 25px;
+}
+a:hover {
+    color: violet;
+    transition: color 0.5s;
+    transform: scale(10);
+}
+hr {
+    margin-top: 0;
+    padding: 0;
+    border: 1px;
+    height: 2.5px;
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(0,0,0,1) 0%, rgba(92,31,139,1) 54%, rgba(0,0,0,1) 100%
+    );
+}
+.geo p{
+    color: rgb(119, 15, 180);
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.geo {
+    margin-top: 10px;
+
+}
+.nutrizik p {
+    color:rgb(119, 15, 180);
+    font-size: 2rem;
+}

@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Diplomata+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    background-color:#171717 ;
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+}
+body .page{
+    margin: 20px 80px;
+
+}
+/*********barre de navigation ***********/
+nav{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+position: sticky;
+top: 0;
+background-color: #171717;
+padding: 10px 0px;
+font-family: 'Quicksand', sans-serif;
+
+
+}
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+
+}
+nav .onglets a{
+    margin-right: 20px;
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav .onglets a:hover {
+    color: violet;
+    transition:color 0.5s;
+}
+
+nav .buttons button{
+    padding: 13px 20px;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+
+}
+nav .buttons .login{
+    background-color: inherit;
+    margin-right: 10px;
+    color: violet;
+}
+nav .buttons .login:hover {
+    color: whitesmoke;
+}
+nav .buttons .register{
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+nav .buttons .register:hover {
+    background-color:#171717 ;
+	color: violet;
+	border: 1px solid violet;
+	transition: background-color 0.5s, color 0.5s;
+}
+/*********fin de la barre de navigation ***********/
+
+/* timer */
+
+.timertitre p {
+font-size: 20px;
+margin: 0%;
+padding: 0%;
+color: violet;
+}
+
+.timer {
+     
+    width: 250px;
+    height: 65px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    color: #000000;
+    background: rgb(15,152,240);
+background: linear-gradient(93deg, rgba(15,152,240,1) 29%, rgba(106,39,157,1) 58%, rgba(153,102,191,1) 75%);
+}
+
+#days {
+    color: black;
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+}
+#hours {
+    color:black;
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+}
+#minutes {
+    color: black;
+    width: 45px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+}
+#seconds {
+    color: black;
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+}
+.timer::before,
+.timer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+  width: 100%;
+  height: 100%;
+  transform: scale(0.9);
+  z-index: -1;
+  background-size: 500%;
+  animation: animate 10s infinite;
+}
+.timer::after {
+    filter: blur(20px);
+  }
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 300% 0; }
+    100% { background-position: 0 0; }
+  }
+/* fin du timer */
+/************header*********/
+
+header h1{
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+    margin-top: 0%;
+    padding: 0%;
+    font-size: 15rem;
+    color: blueviolet;
+    
+}
+.date h2 {
+    text-align: center;
+    margin-top: 0;
+    margin: 0;
+    font-size: 20vh;
+    font-family: 'Lobster', cursive;
+}
+.date p {
+    font-size: 10vh;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.date1 {
+    width: 640px;
+    height: 490px;
+    box-shadow: 0 0 15px 5px violet;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    
+}
+.date1 p {
+    font-size: 28vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.date1 hr {
+    margin-top: 0;
+    padding: 0;
+    height: 1px;
+    width: 100%;
+   background-color: violet;
+
+
+}
+/************ fin header*********/
+
+/************** Descriptif**********/
+
+.cont {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.event {
+    width: 250px;
+	height: 100px;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
+	border-radius: 10px;
+    text-align: center;
+}
+.event1 {
+    width: 250px;
+	height: 100px;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
+	border-radius: 10px;
+    text-align: center;
+}
+.event p {
+    font-family: 'Quicksand', sans-serif;
+}
+.event1 p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h6 {
+    text-align: center;
+    font-size: large;
+    margin: 10px;
+    color: violet
+}
+/************* fin du  Descriptif************/
+/****************** carte *******************/
+/*Container 3D*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container-3d {
+	width: 250px;
+	height: 400px;
+	perspective: 500px; /*Referencial for 3d Perspective*/
+	border-radius: 10px;
+}
+
+/*Card*/
+.card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
+	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
+	transform-style: preserve-3d; /*Force the two faces to rotate together*/
+}
+
+.front,
+.back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden; /*hide backface*/
+	transition: all 1s ease-in-out;
+	transform-style: preserve-3d; /*to allow 3d on images*/
+
+	background: linear-gradient(180deg, rgba(19,24,29,1) 7%, rgba(32,33,46,1) 36%, rgba(106,39,157,1) 59%, rgba(153,102,191,1) 83%);
+}
+
+.back {
+	background-position: right;
+	font-family: "Lobster", cursive;
+	transform: rotateY(180deg); /*rotate this face*/
+}
+
+/*Content Card*/
+.front-content,
+.back-content {
+	transform: translateZ(50px);
+}
+
+/*Front*/
+.front-content {
+	text-align: center;
+}
+
+
+
+/*Back*/
+.back-content {
+	height: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+h2 {
+   text-align: center;
+   margin-top: 55%;
+   padding: 10px;
+   font-size: 1.2rem;
+   color: whitesmoke;
+   text-shadow: 2px 4px 2px black;
+   font-family: 'Diplomata SC', cursive;
+}
+h3 {
+    padding: 0;
+    margin: 0;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    font-weight: 100;
+    color:violet;
+    text-shadow:  2px 4px 2px black;
+}
+.para {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    margin-top: 0;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px #000000;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.about {
+	margin: 90px;
+	font-family: "Lobster", cursive;
+	font-size: 1rem;
+	color: whitesmoke;
+	text-shadow: 1px 3px 2px #000000;
+	text-align: end;
+}
+
+/*Hover Transition*/
+.container-3d:hover .card {
+	transform: rotateY(180deg); /*rotate card when hover on container*/
+}
+
+.container-3d:hover .front {
+	background-position: right;
+}
+
+.container-3d:hover .back {
+	background-position: left;
+}
+
+
+/************* fin carte *******************/
+.present h6 {
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.boutique  {
+width: 900px;
+height: 190px;
+box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.432);
+border-radius: 10px;
+font-size: 20px;
+font-family: 'Quicksand', sans-serif;
+padding-top: 20px;
+text-align: center;
+position: sticky;
+left: 26%;
+}
+.boutique1 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: violet;
+}
+.boutique1 a:hover {
+    color: #00f0f0;
+    transition:color 0.5s;
+
+}
+.boutique1 button {
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 10px;
+    padding: 13px 20px;
+    background-color: violet;
+    border: whitesmoke;
+    color: whitesmoke;
+}
+.boutique1 button:hover {
+    background-color:#171717  ;
+    color: violet;
+    border: 1px solid violet;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+
+.boutique::before,
+.boutique::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg,#ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  z-index: -1;
+  background-size: 500%;
+  animation: animate 10s infinite;
+}
+.boutique::after {
+    filter: blur(20px);
+  }
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 300% 0; }
+    100% { background-position: 0 0; }
+  }
+/* .reseau socilae */
+.reseau {
+    text-align: center;
+    font-size: 40px;
+    color: violet;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.image {
+    
+}
+.image1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+/* fin des reseaux social */
+/************pied de page*******/
+
+footer{
+    background-color: #1f1e1ea1;
+    padding: 20px 100px;
+    color: gray;
+
+}
+footer a {
+    text-decoration: none;
+    color: rgb(172, 168, 168)
+}
+footer a:hover {
+    color: violet;
+    transition:color 0.7s;
+    
+}
+footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-size:10px ;
+
+}
+footer .colonnes a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-size:10px ;
+    margin: 10px 0px;
+
+}
+.dev{
+    font-size: 7px;
+    color: blueviolet;
+    text-align: left;
+    font-size: 0.7rem;
+}
+/**********fin du pied de page*****/
