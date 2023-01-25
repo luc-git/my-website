@@ -39,13 +39,13 @@ const validateInputs = () => {
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
 
-    if(usernameValue === '') {
+    if (usernameValue === '') {
         setError(username, 'besion nom de famille');
     } else {
         setSuccess(username);
     }
 
-    if(emailValue === '') {
+    if (emailValue === '') {
         setError(email, 'email non valid');
     } else if (!isValidEmail(emailValue)) {
         setError(email, 'email non valid');
@@ -53,15 +53,15 @@ const validateInputs = () => {
         setSuccess(email);
     }
 
-    if(passwordValue === '') {
+    if (passwordValue === '') {
         setError(password, 'besoin dun mot de passe');
-    } else if (passwordValue.length < 8 ) {
+    } else if (passwordValue.length < 8) {
         setError(password, 'votre mot de passe dois faire plus de 8 caractères')
     } else {
         setSuccess(password);
     }
 
-    if(password2Value === '') {
+    if (password2Value === '') {
         setError(password2, 'Please confirm your password');
     } else if (password2Value !== passwordValue) {
         setError(password2, "les mots de passes ne correspondent pas");

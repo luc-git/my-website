@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
 :root {
 	--violet: #d33bfd;
 }
@@ -21,23 +22,28 @@ header nav {
 	justify-content: space-between;
 	align-items: center;
 }
+
 header nav h1 {
 	margin: 0;
 	text-transform: uppercase;
 	color: var(--violet);
 }
+
 header nav .right {
 	display: flex;
-	
+
 }
+
 header nav .right p {
 	margin: 0 15px 0 0;
 	color: #ccc;
 }
+
 header nav .right p:hover {
 	color: white;
 	cursor: pointer;
 }
+
 header nav .right button {
 	display: flex;
 	justify-content: space-around;
@@ -50,11 +56,13 @@ header nav .right button {
 	color: var(--violet);
 	cursor: pointer;
 	transition: color 0.5s, background-color 0.5s;
-	
+
 }
+
 a {
 	text-decoration: none;
 }
+
 header nav .right button:hover {
 	color: inherit;
 	background-color: var(--violet);
@@ -67,25 +75,30 @@ header nav .right button:hover {
 	align-items: center;
 	justify-content: space-between;
 }
+
 .presentation .product-presentation {
 	width: 100%;
 	flex-shrink: 3;
 }
+
 .presentation .product-presentation h2 {
 	color: var(--violet);
 	font-size: 4vw;
 	font-family: 'Unbounded', cursive;
 }
+
 .presentation .product-presentation h1 {
 	margin: 0;
 	font-size: 3vw;
 	width: 80%;
 }
+
 .presentation .product-presentation p {
 	font-weight: 300;
 	font-size: 25px;
 	color: #e9e9e9;
 }
+
 .presentation .product-presentation button {
 	margin-top: 20px;
 	padding: 15px 20px;
@@ -95,6 +108,7 @@ header nav .right button:hover {
 	outline: none;
 	cursor: pointer;
 }
+
 .presentation .image-presentation img {
 	width: 100%;
 }
@@ -105,16 +119,19 @@ header nav .right button:hover {
 	border: 1px solid var(--violet);
 	transition: background-color 0.5s, color 0.5s;
 }
+
 .first .product-presentation button:hover {
 	background-color: inherit;
 	color: var(--violet);
 }
+
 .first .product-presentation .small-images {
 	margin-top: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
+
 .first .product-presentation .small-images .small {
 	padding: 20px;
 	background-color: #33314d;
@@ -122,9 +139,11 @@ header nav .right button:hover {
 	border-radius: 20px;
 	transition: filter 0.5s;
 }
+
 .first .product-presentation .small-images .small:hover {
 	filter: brightness(80%);
 }
+
 .first .product-presentation .small-images .small img {
 	width: 120px;
 }
@@ -140,9 +159,11 @@ header nav .right button:hover {
 	.presentation .product-presentation h1 {
 		font-size: 2em;
 	}
+
 	.presentation .image-presentation {
 		display: none;
 	}
+
 	.first .product-presentation .small-images .small img {
 		width: 90px;
 	}
@@ -150,6 +171,7 @@ header nav .right button:hover {
 	footer {
 		justify-content: flex-start;
 	}
+
 	footer .column {
 		width: 80%;
 	}
