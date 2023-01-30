@@ -2,35 +2,20 @@
 
 body {
     background-color: rgba(0, 0, 0, 0.938);
-    display: flex;
-    justify-content: center;
-    margin-top: 150px;
-    height: 100%;
-    width: 100%;
-    position: absolute;
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 .main {
-    height: 700px;
-    width: 550px;
-    border: 2px solid aqua;
-    color: whitesmoke;
-    text-align: center;
-    border-radius: 10px;
-    background-color: black;
-    margin-top: 15px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.main1 p {
-    color: rgb(119, 15, 180);
+.titre p {
     font-size: 5rem;
-    padding: 0px;
-    margin: 0px;
-    justify-content: center;
-    display: flex;
-    justify-content: center;
+    text-transform: uppercase;
+    white-space: normal;
 }
 
 .main1 a {
@@ -43,7 +28,6 @@ body {
 a:hover {
     color: violet;
     transition: color 0.5s;
-    transform: scale(10);
 }
 
 hr {
@@ -57,17 +41,79 @@ hr {
 }
 
 .geo p {
-    color: rgb(119, 15, 180);
     font-size: 2rem;
-    margin-top: 20px;
+    text-transform: uppercase;
+    white-space: normal;
 }
 
 .geo {
-    margin-top: 10px;
-
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .nutrizik p {
-    color: rgb(119, 15, 180);
     font-size: 2rem;
+    text-transform: uppercase;
+}
+
+p {
+    color: violet;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+}
+
+textarea {
+    width: 50%;
+    border-radius: 4px;
+}
+
+label {
+    text-align: start;
+}
+
+.envoyer {
+    background-color: rgb(28, 184, 65);
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 50px;
+    resize: none;
+}
+
+@media only screen and (max-width: 810px) {
+    iframe {
+        width: 100%;
+    }
+
+    .titre p {
+        font-size: 5.5vw;
+    }
+
+    .geo p {
+        font-size: 5vw;
+    }
+
+    input {
+        width: 98%;
+    }
+
+    textarea {
+        width: 98%;
+    }
 }
