@@ -4,19 +4,27 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Landing page Moderne et Responsive en HTML & CSS</title>
+	<title>boutique</title>
 	<link rel="stylesheet" href="boutique.css" />
 </head>
 
 <body>
 	<header>
 		<nav>
-			<h1>Boutique nutri'zik</h1>
-			<div class="right">
-				<a href="index.html"><button>Accueil</button></a>
-				<button>Présentation</button>
+			<div id="onglets">
+				<a href="index.html">Accueil</a>
+				<a href="https://www.cantine-savoyarde.fr/page/232693-presentation">Association</a>
+				<a href="boutique.html">Boutique nutri'zik</a>
+				<a href="contact.html" target="_blank">Nous contacter</a>
+				<!--button>Présentation</button-->
 			</div>
+			<h1>Boutique nutri'zik</h1>
 		</nav>
+		<div id="mobile-onglet">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 
 		<section class="presentation first">
 			<div class="product-presentation">
@@ -31,10 +39,9 @@
 					température sur le textile. vous pouvez donc flocé ce que vous voulez
 					n'importe ou sur le vêtement.Pour avoir tout les information
 					(prix, ce qu'on peut vous proposer, mention légale)
-					clicé sur le bouton (plus d'information) ci-dessous
 				</p>
-				<button>plus d'information</button>
-				<button>Passer commande </button>
+				<!--button>plus d'information</button>
+				<button>Passer commande </button-->
 
 				<div class="small-images">
 					<div class="small">
@@ -75,10 +82,9 @@
 					Pour avoir toutes les informations (prix,
 					comment trouver de fichier 3D,
 					comment crée, c'est propre fichier 3D extra...)
-					clicé sur le bouton (plus d'information) ci-dessous
 				</p>
-				<button>plus d'information</button>
-				<button>Passer commande </button>
+				<!--button>plus d'information</button>
+				<button>Passer commande </button-->
 				<div class="small-images">
 					<div class="small">
 						<img src="https://www.maisonapart.com/images/normal/20141124_172511_drawnvase-1800x600.jpg" />
@@ -109,11 +115,10 @@
 					vous pouvez tout faire. (ex decoration pour une chambre, tables , chaise etc.
 					Notre machine découpe uniquement le bois.)Pour avoir
 					tout les information (prix, ce qu'on peut vous proposer, mention légale ect...)
-					clicé sur le bouton (plus d'information) ci-dessous
 
 				</p>
-				<button>plus d'information</button>
-				<button>Passer commande </button>
+				<!--button>plus d'information</button>
+				<button>Passer commande </button-->
 				<div class="small-images">
 					<div class="small">
 						<img
@@ -135,5 +140,6 @@
 			</div>
 		</section>
 	</header>
+	<script src="script.js"></script>
 
 </body>

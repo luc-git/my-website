@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import "partage.css";
 
 :root {
 	--violet: #d33bfd;
@@ -18,7 +19,6 @@ header {
 header nav {
 	padding: 30px 5% 0px 5%;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -29,43 +29,20 @@ header nav h1 {
 	color: var(--violet);
 }
 
-header nav .right {
-	display: flex;
-
-}
-
-header nav .right p {
-	margin: 0 15px 0 0;
-	color: #ccc;
-}
-
-header nav .right p:hover {
-	color: white;
-	cursor: pointer;
-}
-
-header nav .right button {
-	display: flex;
-	justify-content: space-around;
-	gap: 10px;
-	padding: 5px 15px;
-	font-size: 16px;
-	background-color: inherit;
-	border: 1px solid var(--violet);
-	border-radius: 5px;
-	color: var(--violet);
-	cursor: pointer;
-	transition: color 0.5s, background-color 0.5s;
-
-}
-
 a {
 	text-decoration: none;
 }
 
-header nav .right button:hover {
-	color: inherit;
-	background-color: var(--violet);
+header nav a {
+	color: whitesmoke;
+	margin-right: 20px;
+	font-family: "Quicksand", sans-serif;
+}
+
+nav a:hover {
+	color: violet;
+	transition: color 0.5s;
+	text-decoration: underline;
 }
 
 .presentation {
@@ -151,7 +128,7 @@ header nav .right button:hover {
 
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 810px) {
 	nav .right p {
 		display: none;
 	}
