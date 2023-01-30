@@ -9,16 +9,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>contact</title>
 </head>
 
 <body>
-    <div class="main">
+    <section class="page">
+        <nav>
+            <div id="onglets">
+                <a href="https://www.cantine-savoyarde.fr/page/232693-presentation">Association</a>
+                <a href="boutique.html">Boutique nutri'zik</a>
+                <a href="contact.html" target="_blank">Nous contacter</a>
+            </div>
+            <!--div id="buttons">
+                <a href="connection.html"><button class="login"> se connecter </button></a>
+                <a href="inscription.html"><button class="register">S'enregistrer</button></a>
+            </div-->
+        </nav>
+        <div id="mobile-onglet">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="main">
+            <div class="titre">
+                <strong>
+                    <pre>
+                        <p>contactez-nous</p>
+                        <p>si vous avez la moindre question n'hésitez pas</p>
+                    </pre>
+                </strong>
+            </div>
+            <div class="geo">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.0181771335483!2d5.918194215822515!3d45.59017933304887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ba87d244df4f5%3A0x8a23de29d967f2ae!2sLa%20Dynamo!5e0!3m2!1sfr!2sfr!4v1674153338189!5m2!1sfr!2sfr"
+                    width="810" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <pre>
+                        <p>venez rejoindre l'évènement nutrizik à l'adresse</p>
+                        <p>24 avenue daniel rops, 73000 chambéry</p>
+                    </pre>
+            </div>
+        </div>
+        <form accept-charset="UTF-8" method="post" class="email" name="captcha" onsubmit="return recaptcha()"
+            action=https://script.google.com/macros/s/AKfycbw9aeinJNJdt3DM-ILxX7-NADQGynqdGpm1nPn33m96MghEXJhT7jJ9xRUtp8S9iDWCoQ/exec>
+            <fieldset>
+            <label for="Name">Nom:</label>
+            <input type="text" name="Name">
+            </fieldset>
+            <fieldset>
+                <label for="object">Objet:</label>
+                <input type="text" name="object" required>
+            </fieldset>
+            <fieldset>
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="10" required
+                    placeholder="Posez nous votre question"></textarea>
+            </fieldset>
+            <fieldset class="pure-group">
+                <label for="email">votre adresse email:</label>
+                <input id="email" name="email" type="email" value="" required placeholder="email@example.com" />
+            </fieldset>
+            <div class="g-recaptcha" name="recaptcha" data-sitekey="6LeaaTckAAAAABbgvj7UnFF3GpRHk2CBR1XUxyL_"></div>
+            <button class="envoyer" type="submit" value="Submit"><i class="fa fa-paper-plane"></i>&nbsp;envoyer</button>
+        </form>
+        <div class="nutrizik">
+            <p>vive nutri'zik</p>
+        </div>
         <div class="main1">
-            <strong>
-                <p>contact</p>
-            </strong>
-            <br>
             <hr>
             <a href="https://www.instagram.com/nutrizik/" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
@@ -36,19 +95,9 @@
                 <i class="fa-solid fa-envelope"></i>
             </a>
             <hr>
-            <br>
         </div>
-        <div class="geo">
-            <p>Géolocalisation</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.0181771335483!2d5.918194215822515!3d45.59017933304887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ba87d244df4f5%3A0x8a23de29d967f2ae!2sLa%20Dynamo!5e0!3m2!1sfr!2sfr!4v1674153338189!5m2!1sfr!2sfr"
-                width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="nutrizik">
-            <p>vive nutri'zik</p>
-        </div>
-    </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

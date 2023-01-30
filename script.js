@@ -31,3 +31,11 @@ onglet.addEventListener("click", event => {
         document.body.style.overflow = "hidden"
     }
 })
+
+function recaptcha() {
+    const recaptcha = document.forms["captcha"]["g-recaptcha-response"].value
+    if (recaptcha == "") {
+        alert("veuillez remplir le captcha")
+        return false
+    }
+}
