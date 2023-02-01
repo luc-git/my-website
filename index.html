@@ -14,7 +14,7 @@
         <!-- barre de navigation -->
         <nav>
             <div id="onglets">
-                <a href="index.html">Accueil</a>
+                <a href="/nutrizik">Accueil</a>
                 <a href="https://www.cantine-savoyarde.fr/page/232693-presentation">Association</a>
                 <a href="./boutique">Boutique nutri'zik</a>
                 <a href="./contact" target="_blank">Nous contacter</a>
@@ -26,12 +26,12 @@
         </nav>
         <!-- fin de la barre de navigation -->
         <!-- image reseau -->
-        <div id="nav-mobile">
-            <div id="mobile-onglet">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+        </div>
+        <div id="mobile-onglet">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <!-- fin des reseau -->
         <!-- timer  -->
@@ -243,7 +243,7 @@
     <script>
         setInterval(() => {
             const toDay = new Date().getTime()
-            const event = new Date("2023/2/18 15:00:00").getTime()
+            const event = new Date("2023-2-18 14:00:00").getTime()
             const difference = event - toDay
 
             days = Math.floor(difference / (1000 * 60 * 60 * 24))
