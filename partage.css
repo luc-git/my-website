@@ -1,11 +1,16 @@
 @media only screen and (min-width: 1080px) {
-    #mobile-onglet {
-        display: none;
-    }
 
     body .page {
         margin: 20px 80px;
     }
+}
+
+#mobile-onglet {
+    display: none;
+}
+
+#nav-mobile {
+    visibility: hidden;
 }
 
 body {
@@ -51,17 +56,17 @@ nav #onglets a:hover {
 
 @media only screen and (max-width: 810px) {
     #mobile-onglet {
-        position: relative;
+        position: fixed;
         display: flex;
         flex-direction: row;
         align-items: center;
         height: 20px;
         width: 16px;
         flex-wrap: wrap;
-        right: 10px;
-        top: 10px;
+        right: 0;
+        top: 0;
         z-index: 2;
-        padding: 30px;
+        padding: 13px;
     }
 
     #mobile-onglet span {
@@ -72,13 +77,26 @@ nav #onglets a:hover {
     }
 
     nav {
-        height: 100%;
-        position: absolute;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        bottom: 0;
         width: 100%;
         z-index: 1;
         flex-direction: column;
         justify-content: space-between;
         visibility: collapse;
+        overflow: hidden;
+    }
+
+    #nav-mobile {
+        position: fixed;
+        height: 52px;
+        background-color: #171717;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        visibility: visible;
     }
 
     .cont {

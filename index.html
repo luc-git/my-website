@@ -26,12 +26,12 @@
         </nav>
         <!-- fin de la barre de navigation -->
         <!-- image reseau -->
-
-        </div>
-        <div id="mobile-onglet">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="nav-mobile">
+            <div id="mobile-onglet">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
         <!-- fin des reseau -->
         <!-- timer  -->
@@ -243,7 +243,7 @@
     <script>
         setInterval(() => {
             const toDay = new Date().getTime()
-            const event = new Date("2023 2 18 14:00:00").getTime()
+            const event = new Date("2023 2 18 15:00:00").getTime()
             const difference = event - toDay
 
             days = Math.floor(difference / (1000 * 60 * 60 * 24))
