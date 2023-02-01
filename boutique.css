@@ -10,9 +10,6 @@ body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	color: white;
-}
-
-header {
 	background: linear-gradient(#13181d, #20212e, #341b47);
 }
 
@@ -27,22 +24,6 @@ header nav h1 {
 	margin: 0;
 	text-transform: uppercase;
 	color: var(--violet);
-}
-
-a {
-	text-decoration: none;
-}
-
-header nav a {
-	color: whitesmoke;
-	margin-right: 20px;
-	font-family: "Quicksand", sans-serif;
-}
-
-nav a:hover {
-	color: violet;
-	transition: color 0.5s;
-	text-decoration: underline;
 }
 
 .presentation {
