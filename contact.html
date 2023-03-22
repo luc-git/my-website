@@ -54,6 +54,8 @@
                     </pre>
             </div>
         </div>
+        <!-- Pour que le formulaire fonctionne il faut ajouter l'url de déploiement de votre script google dans "action"
+            https://github.com/levinunnink/html-form-to-google-sheet#6-configure-your-html-form -->
         <form accept-charset="UTF-8" method="post" class="email" name="captcha" onsubmit="return recaptcha()"
             action=https://script.google.com/macros/s/AKfycbw9aeinJNJdt3DM-ILxX7-NADQGynqdGpm1nPn33m96MghEXJhT7jJ9xRUtp8S9iDWCoQ/exec>
             <fieldset>
@@ -73,6 +75,7 @@
                 <label for="email">votre adresse email:</label>
                 <input id="email" name="email" type="email" value="" required placeholder="email@example.com" />
             </fieldset>
+            <!-- Pour faire fonctionner le captcha vous devez ajouter la clé du site de votre recaptcha https://developers.google.com/recaptcha/docs/display?hl=fr -->
             <div class="g-recaptcha" name="recaptcha" data-sitekey="6LeaaTckAAAAABbgvj7UnFF3GpRHk2CBR1XUxyL_"></div>
             <button class="envoyer" type="submit" value="Submit"><i class="fa fa-paper-plane"></i>&nbsp;envoyer</button>
         </form>
